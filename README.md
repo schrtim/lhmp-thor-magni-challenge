@@ -1,6 +1,10 @@
 # THOR-MAGNI Challenge
 
-Welcome to the THOR-MAGNI Challenge!
+Explore the wealth of insights within the THÖR-MAGNI dataset, a large-scale collection of human and robot navigation and interaction data. This dataset extends THÖR with 3.5 times more motion data, introduces novel interactive scenarios, and includes rich contextual annotations. THÖR-MAGNI offers diverse navigation styles of both mobile robots and humans engaged in shared environments with robotic agents, featuring multi-modal data for a comprehensive representation. Accessible online at [thor.oru.se](http://thor.oru.se/), THÖR-MAGNI serves as a valuable resource for training activity-conditioned motion prediction models and investigating visual attention during human-robot interaction.
+
+To further support researchers, THÖR-MAGNI comes with a dedicated set of user-friendly tools, including a [dashboard](https://magni-dash.streamlit.app) and the specialized Python package [thor-magni-tools](https://github.com/tmralmeida/thor-magni-tools). These tools streamline the visualization, filtering, and preprocessing of raw trajectory data, enhancing the accessibility and usability of the dataset. By providing these resources, we aim to equip researchers with versatile and efficient tools to navigate, analyze, and extract valuable insights from the dataset.
+
+Already employed in research papers, the THÖR-MAGNI dataset demonstrates its usefulness for advancing the field of human-robot interaction, offering a wealth of opportunities for predictive modeling and comprehensive exploration of human motion dynamics in various scenarios.
 
 ## Instructions
 
