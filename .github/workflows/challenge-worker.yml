@@ -1,0 +1,50 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: challenge-worker
+on:
+  push:
+    branches: [challenge]
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [challenge]
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Validate challenge
+        run: |
+          python3 challenge_processing_script.py
+        env:
+          IS_VALIDATION: 'True'
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+          GITHUB_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      - name: Update leaderboard
+        run: |
+          python3 leaderboard/update_leaderboard.py
+        env:
+          IS_VALIDATION: 'True'
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+          GITHUB_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      - name: Commit changes on main branch
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add leaderboard/leaderboard.json
+          git commit -m "Update leaderboard.json"
+          git push origin challenge:main --force
+      - name: Delete submissions/submission.npy
+        run: |
+          rm -f submissions/submission.npy
+      - name: Delete leaderboard/board_entry.json
+        run: |
+          rm -f leaderboard/board_entry.json
