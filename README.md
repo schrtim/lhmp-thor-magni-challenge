@@ -94,7 +94,7 @@ python challenge_processing_script.py
 
 ## 5. Terms and Conditions
 
-Note that the ground truth test annotations are provided in the data loader. This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before TBA will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the TBA workshop.
+Note that the ground truth test annotations are provided in the data loader. This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **TBA** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **TBA** workshop.
 
 Namely, we expect these train/val/test paradigms to be followed:
 
