@@ -1,4 +1,8 @@
-# THOR-MAGNI Challenge 
+# THÖR-MAGNI Challenge 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://magni-dash.streamlit.app)
+
+Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)
 
 <img src="assets/Logo.svg" align="left" width=25% height=25%>
 
@@ -11,8 +15,6 @@ Already employed in research papers, the THÖR-MAGNI dataset demonstrates its us
 Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)
 
 ## How to get the data?
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
 
 Our dataset is uploaded and publicly available on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10407222)
 
@@ -34,19 +36,20 @@ We provide a sample jupyter notebook called **run_simple_cvm** that demonstrates
 The structure of the predictions file is as follows:
 
 [
-predictions_scenario_1 (numpy array): Array of predicted trajectories.
-    trajectory_1 (numpy array): Predicted trajectory for the first scenario.
-        time_step_1 (numpy array): Coordinates (x, y) at time step 1.
-        time_step_2 (numpy array): Coordinates (x, y) at time step 2.
-        ...
-        time_step_N (numpy array): Coordinates (x, y) at the final time step.
-    trajectory_N (numpy array): Predicted trajectory for the first scenario.
-        time_step_1 (numpy array): Coordinates (x, y) at time step 1.
-        time_step_2 (numpy array): Coordinates (x, y) at time step 2.
-        ...
-        time_step_N (numpy array): Coordinates (x, y) at the final time step.
-predictions_scenario_N (numpy array): Array of predicted trajectories.
-        ...
+- `predictions_scenario_1` (numpy array): Array of predicted trajectories for the first scenario.
+  - `trajectory_1` (numpy array): Predicted trajectory for the first scenario.
+    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
+    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
+    - ...
+    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
+  - `trajectory_N` (numpy array): Predicted trajectory for the first scenario.
+    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
+    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
+    - ...
+    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
+- `predictions_scenario_N` (numpy array): Array of predicted trajectories for the Nth scenario.
+  - ...
+
 ]
 
 ### Adjust submission metadata
