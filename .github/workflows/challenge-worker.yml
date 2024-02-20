@@ -41,7 +41,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add leaderboard/leaderboard.json
           git commit -m "Update leaderboard.json"
-          git push origin challenge:main --force
+          git push origin HEAD:main --force
       - name: Delete submissions/submission.npy
         run: |
           rm -f submissions/submission.npy
