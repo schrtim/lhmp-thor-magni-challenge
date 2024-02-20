@@ -3,9 +3,10 @@ import numpy as np
 import subprocess
 
 import configparser
+import os
 
 # Define the path to your config file
-config_file_path = "path/to/your/config.ini"
+config_file_path = "config.ini"
 
 # Create a ConfigParser object
 config_parser = configparser.ConfigParser()
@@ -22,13 +23,16 @@ prediction_file = config_parser.get('DEFAULT', 'prediction_file', fallback='pred
 command = 'mkdir submissions'
 
 # Use subprocess to run the command
-try:
-    subprocess.run(command, shell=True, check=True)
-    print("Directory 'submissions' created successfully.")
-except subprocess.CalledProcessError as e:
-    print(f"Error creating directory: {e}")
+if os.path.exists("submissions"):
+    print("The directory 'submissions' already exists.")
+else:
+    try:
+        subprocess.run(command, shell=True, check=True)
+        print("Directory 'submissions' created successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error creating directory: {e}")
 
-submission_path = "submissions/"+prediction_file
+submission_path = prediction_file
 predictions = np.load(submission_path, allow_pickle=True)
 
 submission = {
