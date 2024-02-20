@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://magni-dash.streamlit.app)
 
-Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)
+<span style="font-size:2em;">Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
 
 <img src="assets/Logo.svg" align="left" width=25% height=25%>
 
@@ -14,7 +14,7 @@ Already employed in research papers, the THÖR-MAGNI dataset demonstrates its us
 
 Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)
 
-## How to get the data?
+## 1. How to get the data?
 
 Our dataset is uploaded and publicly available on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10407222)
 
@@ -22,12 +22,16 @@ To download it and get hands on with the data, you can simply curl it:
 ```
 curl -O https://zenodo.org/records/10407223/files/THOR_MAGNI.zip && unzip -d . THOR_MAGNI.zip && rm -rf THOR_MAGNI.zip
 ```
+##
 
-## Submission Format
+Develop and train your method locally.
+To test the results of your models locally
+
+## 2. Submission Format
 
 You train and develop your method locally and generate prediction files, that can be packaged and submitted to our challenge.
 
-### Information for the user
+### 2.1. Information for the user
 
 Submissions to our challenge are only to be made in numpys [**.npy** format](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html).
 
@@ -52,13 +56,13 @@ The structure of the predictions file is as follows:
 
 ]
 
-### Adjust submission metadata
+### 2.2. Adjust submission metadata
 
 The repositories main directory contains a **config.yml** file.
 Here you can adjust your team name and specifiy your method.
 As well as specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
 
-## How to make a submission
+## 3. How to test a prediction
 
 To participate in this challenge, follow these steps:
 
@@ -76,10 +80,19 @@ conda create --name <env_name> python=3.10.8 && conda activate <env_name> && pip
 python package_submission.py
 ```
 
+4. To test your challenge results, you can the processing scrpt locally. This will print the leadrboard entry for the previosuly packaged submission.
+```
+python challenge_processing_script.py
+```
+## 4. Make a submission to our challenge 
+
+<span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
+
+
 4. Commit and push ONLY the *submission.npy* file to your forked repository.
 5. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
 
-## Terms and Conditions
+## 5. Terms and Conditions
 
 Note that the ground truth test annotations are provided in the data loader. This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before TBA will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the TBA workshop.
 
