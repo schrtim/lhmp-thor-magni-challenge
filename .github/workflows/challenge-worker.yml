@@ -6,7 +6,7 @@ on:
   push:
     branches: [challenge]
   pull_request:
-    types: [opened, synchronize, reopened, edited]
+    types: [opened, synchronize, reopened]
     branches: [challenge]
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Validate challenge
         run: |
-          python3 scripts/challenge_processing_script.py
+          python3 challenge_processing_script.py
         env:
           IS_VALIDATION: 'True'
           GITHUB_CONTEXT: ${{ toJson(github) }}
