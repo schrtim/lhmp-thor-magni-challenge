@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Leaderboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 90vw; /* 80% of the viewport width */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; /* Add horizontal scrollbar when necessary */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Challenge Leaderboard</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team Name</th>
+                    <th>Method Name</th>
+                    <th>ADE SC1</th>
+                    <th>FDE SC1</th>
+                    <th>ADE SC2</th>
+                    <th>FDE SC2</th>
+                    <th>ADE SC3</th>
+                    <th>FDE SC3</th>
+                    <th>ADE SC4</th>
+                    <th>FDE SC4</th>
+                    <th>ADE SC5</th>
+                    <th>FDE SC5</th>
+                    <th>Total ADE</th>
+                    <th>Total FDE</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Leaderboard data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        // Fetch leaderboard data from GitHub repository
+        fetch('https://raw.githubusercontent.com/janikkaden/challenge-test/main/leaderboard/leaderboard.json')
+            .then(response => response.json())
+            .then(data => {
+                const leaderboardBody = document.getElementById('leaderboard-body');
+                data.forEach((entry, index) => {
+                    const result = entry.result[0];
+                    const row = `<tr>
+                        <td>${index + 1}</td>
+                        <td>${entry.team_name}</td>
+                        <td>${entry.method_name}</td>
+                        <td>${result.ADE_SC1}</td>
+                        <td>${result.FDE_SC1}</td>
+                        <td>${result.ADE_SC2}</td>
+                        <td>${result.FDE_SC2}</td>
+                        <td>${result.ADE_SC3}</td>
+                        <td>${result.FDE_SC3}</td>
+                        <td>${result.ADE_SC4}</td>
+                        <td>${result.FDE_SC4}</td>
+                        <td>${result.ADE_SC5}</td>
+                        <td>${result.FDE_SC5}</td>
+                        <td>${result.Total_ADE}</td>
+                        <td>${result.Total_FDE}</td>
+                    </tr>`;
+                    leaderboardBody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error('Error fetching leaderboard data:', error));
+    </script>
+</body>
+</html>
