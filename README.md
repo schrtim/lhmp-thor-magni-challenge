@@ -1,4 +1,6 @@
-# THOR-MAGNI Challenge
+# THOR-MAGNI Challenge 
+
+<img src="assets/Logo.svg" align="left" width=15% height=15%>
 
 Explore the wealth of insights within the THÖR-MAGNI dataset, a large-scale collection of human and robot navigation and interaction data. This dataset extends THÖR with 3.5 times more motion data, introduces novel interactive scenarios, and includes rich contextual annotations. THÖR-MAGNI offers diverse navigation styles of both mobile robots and humans engaged in shared environments with robotic agents, featuring multi-modal data for a comprehensive representation. Accessible online at [thor.oru.se](http://thor.oru.se/), THÖR-MAGNI serves as a valuable resource for training activity-conditioned motion prediction models and investigating visual attention during human-robot interaction.
 
