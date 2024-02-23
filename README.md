@@ -101,6 +101,6 @@ Namely, we expect these train/val/test paradigms to be followed:
 ## Contact
 
 If you have questions or remarks regarding this challenge, please contact one of our team members:
-- [Tim Schreiter](github.com/schrtim)
-- [Janik Kaden](github.com/janikkaden)
-- [Tiago Almeida](github.com/tmralmeida)
+- [Tim Schreiter](http://github.com/schrtim)
+- [Janik Kaden](http://github.com/janikkaden)
+- [Tiago Almeida](http://github.com/tmralmeida)
