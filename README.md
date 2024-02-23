@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://magni-dash.streamlit.app)
 
-<span style="font-size:2em;">Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
+<span style="font-size:2em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
 
 <img src="assets/Logo.svg" align="left" width=25% height=25%>
 
@@ -12,13 +12,13 @@ To further support researchers, THÖR-MAGNI comes with a dedicated set of user-f
 
 Already employed in research papers, the THÖR-MAGNI dataset demonstrates its usefulness for advancing the field of human-robot interaction, offering a wealth of opportunities for predictive modeling and comprehensive exploration of human motion dynamics in various scenarios.
 
-Results will be displayed in the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)
+Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)
 
 ## 1. How to get the data?
 
 Our dataset is uploaded and publicly available on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10407222)
 
-To download it and get hands on with the data, you can simply curl it:
+To download it and get hands-on with the data, you can simply curl it:
 ```
 curl -O https://zenodo.org/records/10407223/files/THOR_MAGNI.zip && unzip -d . THOR_MAGNI.zip && rm -rf THOR_MAGNI.zip
 ```
@@ -33,7 +33,7 @@ You train and develop your method locally and generate prediction files, that ca
 
 ### 2.1. Information for the user
 
-Submissions to our challenge are only to be made in numpys [**.npy** format](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html).
+Submissions to our challenge are only to be made in [**.npy** format](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html).
 
 We provide a sample jupyter notebook called **run_simple_cvm** that demonstrates the format for predictions.
 
