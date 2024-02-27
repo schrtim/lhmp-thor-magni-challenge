@@ -59,19 +59,19 @@ To participate in this challenge, follow these steps:
 
 1. Fork this repository to your own GitHub account.
 2. Clone the forked repository to your local machine.
-3. Create a conda environment using the following command (replace env_name with the name you want)
+3. Create a conda environment using the following command:
 ```
-conda create --name <env_name> python=3.10.8 && conda activate <env_name> && pip install -r requirements.txt
+conda env create -f environment.yaml && conda activate thor-magni-challenge
 ```
 
-3. Copy your submission_file.npy in the submissions folder and package it. 
-(NOTE: This will use the metadata you specified in config.yml)
+3. Copy your submission file (.npy) into the repo base folder and package it:
+(NOTE: This will use the metadata you specified in config.yml and create a submission.npy file inside the submissions folder.)
 
 ```
 python package_submission.py
 ```
 
-4. To test your challenge results, you can the processing scrpt locally. This will print the leadrboard entry for the previosuly packaged submission.
+4. To test your challenge results, you can run the processing script locally. This will print the leaderboard entry for the previously packaged submission.
 ```
 python challenge_processing_script.py
 ```
@@ -80,7 +80,7 @@ python challenge_processing_script.py
 <span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
 
 
-4. Commit and push ONLY the *submission.npy* file to your forked repository.
+4. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
 5. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
 
 ## 5. Terms and Conditions
