@@ -2,9 +2,6 @@ import os
 import random 
 import matplotlib.pyplot as plt
 
-from extract_data import ExtractPredictionDataset
-from cvm import ConstantVelocityModel
-
 from typing import List
 import pandas as pd
 import numpy as np
