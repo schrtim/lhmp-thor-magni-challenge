@@ -1,22 +1,3 @@
 [
-    {
-        "team_name": "Test-Team",
-        "method_name": "TestMethod 123",
-        "result": [
-            {
-                "ADE_SC1": 1.0717,
-                "FDE_SC1": 2.4378,
-                "ADE_SC2": 1.0765,
-                "FDE_SC2": 2.4777,
-                "ADE_SC3": 1.0548,
-                "FDE_SC3": 2.4213,
-                "ADE_SC4": 1.0143,
-                "FDE_SC4": 2.2777,
-                "ADE_SC5": 0.9478,
-                "FDE_SC5": 2.1048,
-                "Total_ADE": 1.0534,
-                "Total_FDE": 2.4024
-            }
-        ]
-    }
+
 ]
