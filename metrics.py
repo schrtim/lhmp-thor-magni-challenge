@@ -12,7 +12,7 @@ class AverageDisplacementError(Metric):
 
     def update(self, preds: torch.Tensor, target: torch.Tensor):
         if preds.shape != target.shape:
-            raise ValueError("Problem on FDE shapes")
+            raise ValueError("Problem on ADE shapes")
         loss = torch.mean(torch.norm(preds - target, dim=-1), dim=-1)
         self.dist += loss.sum()
         self.total += target.shape[0]  # evaluating bs
