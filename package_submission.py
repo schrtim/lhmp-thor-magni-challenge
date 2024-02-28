@@ -42,3 +42,5 @@ submission = {
 }
 
 np.save("submissions/submission.npy", submission, allow_pickle=True)
+
+print("Submission file created successfully.")
