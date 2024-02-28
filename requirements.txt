@@ -1,0 +1,15 @@
+PyGithub===1.53
+requests==2.25.1
+altair==4.2.0
+numpy==1.24.1
+pandas==1.5.3
+streamlit==1.18.1
+plotly==5.12.0
+ray==2.5.1
+matplotlib
+tqdm
+scipy
+torch
+torchmetrics
+matplotlib
+jupyter
