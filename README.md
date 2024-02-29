@@ -16,7 +16,7 @@ contains a sample dataloader. Furthermore the repsoitory describes everything yo
 
 ## 1. Checkout the Benchmark repo for dataloaders, sample models and a predifned train/test split
 
-[**BENCHMARK REPO**](https://github.com/tmralmeida/icra-magni-benchmark)
+[**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras)
 
 ## 2. Submission Format
 
