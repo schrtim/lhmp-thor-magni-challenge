@@ -2,9 +2,12 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://magni-dash.streamlit.app)
 
+<img src="assets/SampleTrajs.png" align="left" width=25% height=25%>
+
 <span style="font-size:2em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
 
-<img src="assets/Logo.svg" align="left" width=25% height=25%>
+
+<img src="assets/Logo.svg" align="left" width=25% height=25%> 
 
 ## About this repository
 
@@ -49,7 +52,7 @@ The structure of the predictions file is as follows:
 
 ### 2.2. Adjust submission metadata
 
-The repositories main directory contains a **config.yml** file.
+The repositories main directory contains a **config.ini** file.
 Here you can adjust your team name and specifiy your method.
 As well as specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
 
@@ -85,7 +88,7 @@ python challenge_processing_script.py
 
 ## 5. Terms and Conditions
 
-Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **15.04.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
+Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **01.05.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
 
 ## Contact
 
