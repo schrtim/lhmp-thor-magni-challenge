@@ -5,7 +5,7 @@
 <span style="font-size:3em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
 
 
-<img src="assets/Logo.svg" align="left" width=20% height=20%> 
+<img src="assets/Logo.svg" align="left" width=25% height=25%> 
 
 ## About this repository
 
@@ -13,10 +13,9 @@ This repository is for you if you want to partake in the THÖR-MAGNI challenge.
 Develop, train and test your own methods with the dataset.
 
 For all this we provide you with a comprehensive individual repository, that
-contains a sample dataloader. Furthermore the repsoitory describes everything you need to know about the handling of the THÖR-MAGNI data.<br />
+contains a sample dataloader. Furthermore the repsoitory describes everything you need to know about the handling of the THÖR-MAGNI data.
 
-For a first impression of how the data looks like you can use our [visualization tool](https://magni-dash.streamlit.app)
-<img src="assets/SampleTrajs.png" align="center" width=50% height=50%><br />
+For a first impression of how the data looks like you can use our [visualization tool](https://magni-dash.streamlit.app)<br />
 
 ## 1. Checkout the Benchmark repo for dataloaders, sample models and a predefined train/test split
 
