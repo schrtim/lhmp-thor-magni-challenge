@@ -2,9 +2,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://magni-dash.streamlit.app)
 
-<img src="assets/SampleTrajs.png" align="center" width=50% height=25%><br />
+<span style="font-size:3em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
 
-<div align=”center”> [<span style="font-size:2em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>]</div><br />
 
 <img src="assets/Logo.svg" align="left" width=25% height=25%> 
 
@@ -19,6 +18,9 @@ contains a sample dataloader. Furthermore the repsoitory describes everything yo
 ## 1. Checkout the Benchmark repo for dataloaders, sample models and a predifned train/test split
 
 [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras)
+
+For a first impression of how the data looks like you can use our [visualization tool](https://magni-dash.streamlit.app)
+<img src="assets/SampleTrajs.png" align="center" width=50% height=30%><br />
 
 ## 2. Submission Format
 
