@@ -40,6 +40,20 @@ jobs:
           git remote -v
           git config --get remote.origin.url
           git ls-remote origin
+      # Step to delete submissions/submission.npy if it exists
+      - name: Delete submissions/submission.npy
+        run: |
+          if [ -f submissions/submission.npy ]; then
+            git rm submissions/submission.npy
+            git add -A submissions/submission.npy
+          fi
+      # Step to delete leaderboard/board_entry.json if it exists
+      - name: Delete leaderboard/board_entry.json
+        run: |
+          if [ -f leaderboard/board_entry.json ]; then
+            git rm leaderboard/board_entry.json
+            git add -A leaderboard/board_entry.json
+          fi
       - name: Commit changes on main branch
         run: |
           git config --global user.email "actions@github.com"
@@ -47,9 +61,3 @@ jobs:
           git add leaderboard/leaderboard.json
           git commit -m "Update leaderboard.json"
           git push origin HEAD:main --force
-      - name: Delete submissions/submission.npy
-        run: |
-          rm -f submissions/submission.npy
-      - name: Delete leaderboard/board_entry.json
-        run: |
-          rm -f leaderboard/board_entry.json
