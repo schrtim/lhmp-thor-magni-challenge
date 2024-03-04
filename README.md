@@ -2,21 +2,21 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10407222.svg)](https://zenodo.org/doi/10.5281/zenodo.10407222)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://magni-dash.streamlit.app)
 
-<span style="font-size:2em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
+<span style="font-size:3em;">Results will be displayed on the [Leaderboard](https://schrtim.github.io/lhmp-thor-magni-challenge/leaderboard/leaderboard.html)</span>
 
-<img src="assets/Logo.svg" align="left" width=25% height=25%>
+
+<img src="assets/Logo.svg" align="right" width=25% height=25%> 
 
 ## About this repository
 
 This repository is for you if you want to partake in the THÖR-MAGNI challenge.
 Develop, train and test your own methods with the dataset.
 
-For all this we provide you with a comprehensive individual repository, that
-contains a sample dataloader. Furthermore the repsoitory describes everything you need to know about the handling of the THÖR-MAGNi data.
+For all this we provide you with a comprehensive [individual repository](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras), that contains a sample dataloader. Furthermore the repsoitory describes everything you need to know about the handling of the THÖR-MAGNI data. For a first impression of how the data looks like you can use our [visualization tool](https://magni-dash.streamlit.app)<br />
 
-## 1. Checkout the Benchmark repo for dataloaders, sample models and a predifned train/test split
+## 1. Checkout the Benchmark repo for dataloaders, sample models and a predefined train/test split
 
-[**BENCHMARK REPO**](https://github.com/tmralmeida/icra-magni-benchmark)
+[**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras)
 
 ## 2. Submission Format
 
@@ -49,7 +49,7 @@ The structure of the predictions file is as follows:
 
 ### 2.2. Adjust submission metadata
 
-The repositories main directory contains a **config.yml** file.
+The repositories main directory contains a **config.ini** file.
 Here you can adjust your team name and specifiy your method.
 As well as specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
 
@@ -80,12 +80,12 @@ python challenge_processing_script.py
 <span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
 
 
-4. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
-5. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
+5. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
+6. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
 
 ## 5. Terms and Conditions
 
-Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/icra-magni-benchmark). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **15.04.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
+Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **01.05.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
 
 ## Contact
 
