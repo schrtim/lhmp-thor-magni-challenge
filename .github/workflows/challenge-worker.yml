@@ -59,9 +59,3 @@ jobs:
           git add leaderboard/leaderboard.json
           git commit -m "Update leaderboard.json"
           git push origin HEAD:main --force
-      - name: Delete submissions/submission.npy
-        run: |
-          rm -f submissions/submission.npy
-      - name: Delete leaderboard/board_entry.json
-        run: |
-          rm -f leaderboard/board_entry.json
