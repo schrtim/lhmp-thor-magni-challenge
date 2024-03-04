@@ -80,8 +80,8 @@ python challenge_processing_script.py
 <span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
 
 
-4. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
-5. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
+5. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
+6. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
 
 ## 5. Terms and Conditions
 
