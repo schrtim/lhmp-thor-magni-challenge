@@ -45,14 +45,12 @@ jobs:
         run: |
           if [ -f submissions/submission.npy ]; then
             git rm submissions/submission.npy
-            git add -A submissions/submission.npy
           fi
       # Step to delete leaderboard/board_entry.json if it exists
       - name: Delete leaderboard/board_entry.json
         run: |
           if [ -f leaderboard/board_entry.json ]; then
             git rm leaderboard/board_entry.json
-            git add -A leaderboard/board_entry.json
           fi
       - name: Commit changes on main branch
         run: |
