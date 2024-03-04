@@ -1,3 +1,22 @@
 [
-
+    {
+        "team_name": "MAGNI-Staff",
+        "method_name": "CVM",
+        "result": [
+            {
+                "ADE_SC1": 1.072,
+                "FDE_SC1": 2.4385,
+                "ADE_SC2": 1.0744,
+                "FDE_SC2": 2.4728,
+                "ADE_SC3": 1.0534,
+                "FDE_SC3": 2.4196,
+                "ADE_SC4": 1.0143,
+                "FDE_SC4": 2.2777,
+                "ADE_SC5": 0.9478,
+                "FDE_SC5": 2.1048,
+                "Total_ADE": 1.0528,
+                "Total_FDE": 2.4013
+            }
+        ]
+    }
 ]
