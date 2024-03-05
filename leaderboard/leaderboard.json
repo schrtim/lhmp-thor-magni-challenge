@@ -20,7 +20,7 @@
         ]
     },
     {
-        "team_name": "MAGNI-staff",
+        "team_name": "MAGNI-Staff",
         "method_name": "SimpleMLP",
         "result": [
             {

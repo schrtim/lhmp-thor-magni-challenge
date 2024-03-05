@@ -26,26 +26,7 @@ You train and develop your method locally and generate prediction files, that ca
 
 Submissions to our challenge are only to be made in [**.npy** format](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html).
 
-We provide a sample jupyter notebook called **run_simple_cvm** that demonstrates the format for predictions.
-
-The structure of the predictions file is as follows:
-
-[
-- `predictions_scenario_1` (numpy array): Array of predicted trajectories for the first scenario.
-  - `trajectory_1` (numpy array): Predicted trajectory for the first scenario.
-    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
-    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
-    - ...
-    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
-  - `trajectory_N` (numpy array): Predicted trajectory for the first scenario.
-    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
-    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
-    - ...
-    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
-- `predictions_scenario_N` (numpy array): Array of predicted trajectories for the Nth scenario.
-  - ...
-
-]
+For information on how to format your predictions, before proceeding with th next steps, please checkout the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras) once again.
 
 ### 2.2. Adjust submission metadata
 
@@ -64,14 +45,14 @@ To participate in this challenge, follow these steps:
 conda env create -f environment.yaml && conda activate thor-magni-challenge
 ```
 
-3. Copy your submission file (.npy) into the repo base folder and package it:
+4. Copy your submission file (.npy) into the repo base folder and package it:
 (NOTE: This will use the metadata you specified in config.yml and create a submission.npy file inside the submissions folder.)
 
 ```
 python package_submission.py
 ```
 
-4. To test your challenge results, you can run the processing script locally. This will print the leaderboard entry for the previously packaged submission.
+5. To test your challenge results, you can run the processing script locally. This will print the leaderboard entry for the previously packaged submission.
 ```
 python challenge_processing_script.py
 ```
@@ -80,8 +61,8 @@ python challenge_processing_script.py
 <span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
 
 
-5. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
-6. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
+6. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
+7. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
 
 ## 5. Terms and Conditions
 
