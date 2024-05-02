@@ -75,6 +75,8 @@
             .then(response => response.json())
             .then(data => {
                 const leaderboardBody = document.getElementById('leaderboard-body');
+                // Sort data by Total FDE in ascending order
+                data.sort((a, b) => a.result[0].Total_FDE - b.result[0].Total_FDE);
                 data.forEach((entry, index) => {
                     const result = entry.result[0];
                     const row = `<tr>
