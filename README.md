@@ -12,7 +12,7 @@
 This repository is for you if you want to partake in the THÖR-MAGNI challenge.
 Develop, train and test your own methods with the dataset.
 
-For all this we provide you with a comprehensive [individual repository](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras), that contains a sample dataloader. Furthermore the repsoitory describes everything you need to know about the handling of the THÖR-MAGNI data. For a first impression of how the data looks like you can use our [visualization tool](https://magni-dash.streamlit.app)<br />
+For all this we provide you with a comprehensive [individual repository](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras), that contains a sample dataloader. Furthermore, the repository describes everything you need to know about the handling of the THÖR-MAGNI data. For a first impression of how the data looks like, you can use our [visualization tool](https://magni-dash.streamlit.app)<br />
 
 ## 1. Checkout the Benchmark repo for dataloaders, sample models and a predefined train/test split
 
@@ -30,9 +30,9 @@ For information on how to format your predictions, before proceeding with th nex
 
 ### 2.2. Adjust submission metadata
 
-The repositories main directory contains a **config.ini** file.
-Here you can adjust your team name and specifiy your method.
-As well as specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
+The repository's main directory contains a **config.ini** file.
+Here you can adjust your team name and specify your method.
+Also, specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
 
 ## 3. How to test a prediction
 
@@ -58,7 +58,7 @@ python challenge_processing_script.py
 ```
 ## 4. Make a submission to our challenge 
 
-<span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
+<span style="font-size:1.5em;">**Please proceed only with these steps if you want to submit your final results!**</span>
 
 
 6. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
@@ -66,7 +66,7 @@ python challenge_processing_script.py
 
 ## 5. Terms and Conditions
 
-Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **01.05.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
+Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants not to utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **01.05.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
 
 ## Contact
 
