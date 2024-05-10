@@ -18,5 +18,25 @@
                 "Total_FDE": 2.4013
             }
         ]
+    },
+    {
+        "team_name": "MAGNI-Staff",
+        "method_name": "SimpleMLP",
+        "result": [
+            {
+                "ADE_SC1": 0.9267,
+                "FDE_SC1": 1.9855,
+                "ADE_SC2": 0.9356,
+                "FDE_SC2": 2.0181,
+                "ADE_SC3": 0.9501,
+                "FDE_SC3": 2.0415,
+                "ADE_SC4": 0.9165,
+                "FDE_SC4": 1.8973,
+                "ADE_SC5": 0.8413,
+                "FDE_SC5": 1.7307,
+                "Total_ADE": 0.9302,
+                "Total_FDE": 1.9858
+            }
+        ]
     }
 ]

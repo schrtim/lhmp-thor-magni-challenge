@@ -12,7 +12,7 @@
 This repository is for you if you want to partake in the THÖR-MAGNI challenge.
 Develop, train and test your own methods with the dataset.
 
-For all this we provide you with a comprehensive [individual repository](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras), that contains a sample dataloader. Furthermore the repsoitory describes everything you need to know about the handling of the THÖR-MAGNI data. For a first impression of how the data looks like you can use our [visualization tool](https://magni-dash.streamlit.app)<br />
+For all this we provide you with a comprehensive [individual repository](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras), that contains a sample dataloader. Furthermore, the repository describes everything you need to know about the handling of the THÖR-MAGNI data. For a first impression of how the data looks like, you can use our [visualization tool](https://magni-dash.streamlit.app)<br />
 
 ## 1. Checkout the Benchmark repo for dataloaders, sample models and a predefined train/test split
 
@@ -26,32 +26,13 @@ You train and develop your method locally and generate prediction files, that ca
 
 Submissions to our challenge are only to be made in [**.npy** format](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html).
 
-We provide a sample jupyter notebook called **run_simple_cvm** that demonstrates the format for predictions.
-
-The structure of the predictions file is as follows:
-
-[
-- `predictions_scenario_1` (numpy array): Array of predicted trajectories for the first scenario.
-  - `trajectory_1` (numpy array): Predicted trajectory for the first scenario.
-    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
-    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
-    - ...
-    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
-  - `trajectory_N` (numpy array): Predicted trajectory for the first scenario.
-    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
-    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
-    - ...
-    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
-- `predictions_scenario_N` (numpy array): Array of predicted trajectories for the Nth scenario.
-  - ...
-
-]
+For information on how to format your predictions, before proceeding with th next steps, please checkout the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras) once again.
 
 ### 2.2. Adjust submission metadata
 
-The repositories main directory contains a **config.ini** file.
-Here you can adjust your team name and specifiy your method.
-As well as specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
+The repository's main directory contains a **config.ini** file.
+Here you can adjust your team name and specify your method.
+Also, specify the name of your prediction file that you want to upload to the challenge as a prediction in the next step.
 
 ## 3. How to test a prediction
 
@@ -64,28 +45,28 @@ To participate in this challenge, follow these steps:
 conda env create -f environment.yaml && conda activate thor-magni-challenge
 ```
 
-3. Copy your submission file (.npy) into the repo base folder and package it:
+4. Copy your submission file (.npy) into the repo base folder and package it:
 (NOTE: This will use the metadata you specified in config.yml and create a submission.npy file inside the submissions folder.)
 
 ```
 python package_submission.py
 ```
 
-4. To test your challenge results, you can run the processing script locally. This will print the leaderboard entry for the previously packaged submission.
+5. To test your challenge results, you can run the processing script locally. This will print the leaderboard entry for the previously packaged submission.
 ```
 python challenge_processing_script.py
 ```
 ## 4. Make a submission to our challenge 
 
-<span style="font-size:1.5em;">**Please proceed only with these steps if you want to submitt your final results!**</span>
+<span style="font-size:1.5em;">**Please proceed only with these steps if you want to submit your final results!**</span>
 
 
-5. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
-6. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
+6. Commit and push **ONLY** the *submission.npy* file inside the submissions folder to your forked repository.
+7. Create a pull request to submit your *submissions.npy* file to the **challenge branch**. Your pull request will be inspected by one of our admins and approved if there are no outstanding issues.
 
 ## 5. Terms and Conditions
 
-Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **01.05.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
+Note that the ground truth test annotations are provided in the [**BENCHMARK REPO**](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras). This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants not to utilize these unethically, especially as we will be inviting the top participants to present their work at our 2024 ICRA workshop and will review submissions accordingly. For participation in the workshop, only submissions provided before **01.05.** will be considered. Top performers will then be contacted to validate their approaches and provide instructions for submitting their writeup for the **6th Workshop on Longterm Human Motion Prediction (LHMP)** at the **13.05.2024** workshop.
 
 ## Contact
 
